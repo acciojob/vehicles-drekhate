@@ -78,4 +78,12 @@ public class Car extends Vehicle {
     public void setCurrentGear(int currentGear) {
         this.currentGear = currentGear;
     }
+
+    public int getSeats() {
+        return seats;
+    }
+
+    public void setSeats(int seats) {
+        this.seats = seats;
+    }
 }

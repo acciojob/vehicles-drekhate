@@ -14,7 +14,7 @@ public class Vehicle {
 
     public void steer(int direction){
         //direction is in degrees, add it to the current direction
-        this.currentDirection += direction;
+        this.currentDirection = Math.abs(this.currentDirection + direction) % 360;
         System.out.println("steer method called - The direction is changed to: " + currentDirection + " degrees");
     }
 
@@ -53,4 +53,5 @@ public class Vehicle {
     public void setCurrentDirection(int currentDirection) {
         this.currentDirection = currentDirection;
     }
+
 }

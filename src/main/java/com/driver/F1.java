@@ -4,11 +4,11 @@ public class F1 extends Car {
 
     public F1(String name, boolean isManual) {
         //Use arbitrary values for parameters which are not mentioned
-        super(name, 4, 2, 6, isManual, "F1");
+        super(name, 4, 2, 6, isManual, "F1", 4);
     }
 
     public void accelerate(int rate){
-        int newSpeed = this.getCurrentSpeed() + rate; //set the value of new speed by using currentSpeed and rate
+        int newSpeed = getCurrentSpeed() + rate; //set the value of new speed by using currentSpeed and rate
 
         /*
          * speed 0: gear 1

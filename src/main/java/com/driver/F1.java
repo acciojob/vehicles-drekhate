@@ -39,7 +39,7 @@ public class F1 extends Car {
             this.changeGear(4);
         }
         else if (newSpeed > 200 && newSpeed <= 250) {
-
+            this.changeGear(5);
         }
         else {
             this.changeGear(6);

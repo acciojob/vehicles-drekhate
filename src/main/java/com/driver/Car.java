@@ -6,7 +6,7 @@ public class Car extends Vehicle {
     private int doors;
     private int gears;
     private boolean isManual;
-    private int currentGear = 1;
+    private int currentGear;
 
     public Car(String name, int wheels, int doors, int gears, boolean isManual, String type) {
         //Hint: Car extends Vehicle
@@ -16,6 +16,7 @@ public class Car extends Vehicle {
         this.doors = doors;
         this.gears = gears;
         this.isManual = isManual;
+        this.currentGear = 1;
     }
 
     public void changeGear(int newGear){

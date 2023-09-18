@@ -18,8 +18,7 @@ public class Vehicle {
     }
 
     public void steer(int direction) {
-//        this.currentDirection = Math.abs(this.currentDirection + direction) % 360;
-        this.currentDirection = direction;
+        this.currentDirection = Math.abs(this.currentDirection + direction) % 360;
     }
 
     public void stop() {

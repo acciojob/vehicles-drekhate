@@ -7,8 +7,8 @@ public class F1 extends Car {
         super(name, 4, 2, 6, isManual, "F1", 4);
     }
 
-    public void accelerate(int rate){
-        int newSpeed = getCurrentSpeed() + rate; //set the value of new speed by using currentSpeed and rate
+    public void accelerate(int rate) {
+        int newSpeed = getCurrentSpeed() + rate;
 
         /*
          * speed 0: gear 1
@@ -44,7 +44,6 @@ public class F1 extends Car {
         else {
             this.changeGear(6);
         }
-
         if(newSpeed > 0) {
             this.changeSpeed(newSpeed, this.getCurrentDirection());
         }
